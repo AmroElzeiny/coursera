@@ -1,0 +1,330 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+/* stylelint-disable color-no-hex */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  background-color: white;
+}
+
+.header-logo {
+  width: 200px;
+}
+
+.footer-logo {
+  width: 120px;
+}
+
+h1 {
+  font-family: "Markazi Text";
+  font-size: 64pt;
+  font-weight: 500; /*medium*/
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #495E57;
+  font-weight: bold;
+}
+a:hover {
+  color: #EE9972;
+}
+
+.section-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header-nav {
+  flex-wrap: wrap;
+  padding: 30px 0 40px 0;
+}
+
+.section-header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media (min-width: 800px) {
+  .section-header-nav ul {
+    padding: 0 50px;
+  }
+}
+
+.nav-item {
+  font-family: "Karla";
+  font-weight: 500;
+  font-size: 20pt;
+}
+
+/* ===== HomePage ===== */
+/* section chicago */
+.section-chicago {
+  background-color: #495E57;
+  color: #EDEFEE;
+  font-family: "Markazi Text";
+  padding: 10px 0;
+}
+
+.section-chicago > span {
+  row-gap: 20px;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.chicago-span-content {
+  flex: auto;
+}
+
+.chicago-span-content h1 {
+  color: #F4CE14;
+  font-size: 64pt;
+  font-weight: 500; /*medium*/
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.chicago-span-content h2 {
+  color: #EDEFEE;
+  font-family: "Markazi Text";
+  font-size: 40pt;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+.chicago-span-content article {
+  color: #EDEFEE;
+  font-family: "Karla";
+  font-size: 20pt;
+  font-weight: bold;
+  width: 420px;
+  margin-bottom: 20px;
+}
+
+.chicago-span-content button {
+  margin-top: 20px;
+}
+
+.chicago-logo {
+  width: 325px;
+  height: 385px;
+  border-radius: 16px;
+}
+
+/* section specials */
+.section-specials {
+  padding: 10px 0 30px;
+}
+
+.section-specials h1 {
+  font-family: "Markazi Text";
+  font-size: 64pt;
+  font-weight: 500; /*medium*/
+}
+
+.section-specials > span {
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.specials-span-content {
+  flex: auto;
+}
+
+/* ===== Reservations Page ===== */
+.section-main {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.section-main > img {
+  height: 360px;
+  width: 100%;
+}
+
+.section-main > h1,
+.section-main > h2 {
+  font-family: "Markazi Text";
+  font-size: 64pt;
+  font-weight: 500; /*medium*/
+  padding: 20px 0 30px 0;
+  margin: 0;
+}
+
+.section-main > h2 {
+  font-size: 40pt;
+}
+
+.confirmed-span-content {
+  display: flex;
+  text-align: left;
+  font-family: "Karla";
+  font-size: 18pt;
+  gap: 20px;
+  padding-left: 5px;
+}
+
+.confirmed-span-content > span {
+  display: grid;
+  gap: 10px;
+}
+
+.section-main-select label,
+.section-main-select input,
+.section-main-select select {
+  font-family: "Karla";
+  font-size: 20pt;
+  margin: 5px auto 15px auto;
+  width: 460px;
+  text-align: left;
+}
+
+.section-main-select input,
+.section-main-select select {
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #CCC;
+  background-color: white;
+}
+
+.section-main-select input {
+  width: 438px;
+}
+
+.section-main-select label {
+  margin: 0;
+}
+
+.section-main-guests {
+  width: 120px;
+}
+
+.section-main > form {
+  display: inline-grid;
+  max-width: 500px;
+  gap: 20px;
+}
+
+.section-main-select {
+  display: inline-grid;
+  row-gap: 20px;
+  padding-bottom: 50px;
+}
+
+.section-main-select > span {
+  display: inline-grid;
+}
+
+.section-footer {
+  background-color: #D9D9D9;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px 0;
+  font-family: "Karla";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.section-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 100px;
+}
+
+@media (max-width: 750px) {
+  .section-footer-nav {
+    padding: 0 30px;
+  }
+}
+
+.section-footer-nav .section-flexbox {
+  display: block;
+}
+
+.section-footer-nav .nav-item {
+  font-size: 18px;
+}
+
+.section-footer-nav > span:first-child {
+  width: min-content;
+}
+
+.section-footer-nav > span h3 {
+  color: #495E57;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.section-footer-nav ul {
+  margin: 0;
+}
+
+.section-footer-nav > span a {
+  color: #333;
+}
+.section-footer-nav > span a:hover {
+  color: #EE9972;
+}
+
+button,
+[role="button"] {
+  border: none;
+  background-color: #F4CE14;
+  border-radius: 16px;
+  font-family: "Karla";
+  font-weight: bold;
+  font-size: 18pt;
+  padding: 20px 50px;
+  color: black;
+}
+a[role="button"] {
+  display: inline-block;
+}
+button:hover,
+[role="button"]:hover {
+  background-color: #EE9972;
+  color: #495E57;
+}
+button:hover:active,
+[role="button"]:hover:active {
+  background-color: #495E57;
+  color: #EDEFEE;
+}
+
+form button[type="submit"] {
+  width: 100%;
+}
+
+/* ===== Form Validation ===== */
+.field-error {
+  color: red;
+  text-align: left;
+  margin-top: -5px;
+  padding-left: 10px;
+}
+
+input[haserror],
+select[haserror] {
+  border: 1px solid red;
+}
